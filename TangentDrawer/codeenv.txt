@@ -1,0 +1,32 @@
+﻿/* Code environment
+ *
+ * This is the base code file which will be compiled in-memory to
+ * render the input function. There are some palceholders which will
+ * be replaced before the compilation.
+ *
+ * The following palceholders are defined:
+ * ##E       The place where Code from an extension file is placed.
+ * ##P		 The place where the auto-generated preamble is placed.
+ * ##C[x|y]  The place where the auto-generated C#-expression of the
+ *           input function is placed (for x- and y-components,
+ *			 respectively).
+ *
+ * Please DO NOT change this until you know what you are doing.
+ *
+ */
+
+using System;
+using static System.Math;
+namespace X
+{
+	class P
+	{
+		##E
+		const double Pi = PI;
+		public static Tuple<float,float> f(float x)
+		{
+			##P
+			return new Tuple<float,float>((float)(##Cx),(float)(##Cy));
+		}
+	}
+}
