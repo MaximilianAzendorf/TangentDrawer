@@ -76,7 +76,6 @@ namespace TangentDrawer
             }
 
             Bitmap bmp = new Bitmap(renderTarget.GetLength(0), renderTarget.GetLength(1), PixelFormat.Format32bppArgb);
-            bmp.Save("output.png");
             using (FastBitmap fbmp = new FastBitmap(bmp))
             {
                 for(int i = 0; i < renderTarget.GetLength(0); i++)
